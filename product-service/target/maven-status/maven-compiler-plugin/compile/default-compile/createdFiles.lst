@@ -1,0 +1,10 @@
+it\desossi\productservice\service\ProductService.class
+it\desossi\productservice\dto\ProductRequest.class
+it\desossi\productservice\dto\ProductResponse$ProductResponseBuilder.class
+it\desossi\productservice\ProductServiceApplication.class
+it\desossi\productservice\controller\ProductController.class
+it\desossi\productservice\dto\ProductRequest$ProductRequestBuilder.class
+it\desossi\productservice\dto\ProductResponse.class
+it\desossi\productservice\model\Product.class
+it\desossi\productservice\repository\ProductRepository.class
+it\desossi\productservice\model\Product$ProductBuilder.class

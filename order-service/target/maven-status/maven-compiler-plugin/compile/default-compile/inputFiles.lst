@@ -1,0 +1,8 @@
+C:\Users\giova\wsMicroservices\microservices-new\order-service\src\main\java\it\desossi\orderservice\OrderServiceApplication.java
+C:\Users\giova\wsMicroservices\microservices-new\order-service\src\main\java\it\desossi\orderservice\model\OrderLineItems.java
+C:\Users\giova\wsMicroservices\microservices-new\order-service\src\main\java\it\desossi\orderservice\repository\OrderRepository.java
+C:\Users\giova\wsMicroservices\microservices-new\order-service\src\main\java\it\desossi\orderservice\dto\OrderLineItemsDto.java
+C:\Users\giova\wsMicroservices\microservices-new\order-service\src\main\java\it\desossi\orderservice\dto\OrderRequest.java
+C:\Users\giova\wsMicroservices\microservices-new\order-service\src\main\java\it\desossi\orderservice\model\Order.java
+C:\Users\giova\wsMicroservices\microservices-new\order-service\src\main\java\it\desossi\orderservice\controller\OrderController.java
+C:\Users\giova\wsMicroservices\microservices-new\order-service\src\main\java\it\desossi\orderservice\service\OrderService.java

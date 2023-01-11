@@ -1,0 +1,5 @@
+it\desossi\inventoryservice\InventoryServiceApplication.class
+it\desossi\inventoryservice\repository\InventoryRepository.class
+it\desossi\inventoryservice\controller\InventoryController.class
+it\desossi\inventoryservice\model\Inventory.class
+it\desossi\inventoryservice\service\InventoryService.class

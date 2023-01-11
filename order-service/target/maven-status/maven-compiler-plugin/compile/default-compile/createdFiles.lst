@@ -1,0 +1,8 @@
+it\desossi\orderservice\model\Order.class
+it\desossi\orderservice\repository\OrderRepository.class
+it\desossi\orderservice\controller\OrderController.class
+it\desossi\orderservice\dto\OrderRequest.class
+it\desossi\orderservice\OrderServiceApplication.class
+it\desossi\orderservice\dto\OrderLineItemsDto.class
+it\desossi\orderservice\service\OrderService.class
+it\desossi\orderservice\model\OrderLineItems.class
