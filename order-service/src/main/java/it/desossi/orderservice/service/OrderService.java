@@ -22,7 +22,7 @@ import lombok.RequiredArgsConstructor;
 public class OrderService {
 
 	private final OrderRepository orderRepository;
-	private final WebClient webClient;
+	private final WebClient.Builder webClientBuilder;
 
 	public void placeOrder(OrderRequest orderRequest) {
 		Order order = new Order();
@@ -33,8 +33,8 @@ public class OrderService {
 		
 		//Check Inventory service...
 		List<String> skuCodesList = order.getOrderLineItemsList().stream().map(OrderLineItems::getSkuCode).toList();
-		InventoryResponse[] inventoryResponseArray = webClient.get()
-				.uri("http://localhost:8082/api/inventory", 
+		InventoryResponse[] inventoryResponseArray = webClientBuilder.build().get()
+				.uri("http://inventory-service/api/inventory", 
 						uriBuilder -> uriBuilder.queryParam("skuCode", skuCodesList).build())
 				.retrieve()
 				.bodyToMono(InventoryResponse[].class)
