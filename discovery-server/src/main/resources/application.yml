@@ -1,0 +1,11 @@
+eureka:
+  instance:
+    hostname: localhost
+    lease-renewal-interval-in-seconds: '0'
+  client:
+    fetch-registry: 'false'
+    register-with-eureka: 'false'
+  username: ${EUREKA_USERNAME:eureka}
+  password: ${EUREKA_PASSWORD:password}
+server:
+  port: '8761'

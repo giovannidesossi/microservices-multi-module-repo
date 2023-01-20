@@ -1,0 +1,41 @@
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway:
+            route:
+              RouteDefinitionLocator: INFO
+            nodeValue: TRACE
+    root: INFO
+spring:
+  cloud:
+    gateway:
+      routes[2]:
+        uri: http://localhost:8761
+        filters[0]: SetPath=/
+        id: discovery-server
+        predicates[0]: Path=/eureka/web
+      routes[0]:
+        id: product-service
+        uri: lb://product-service
+        predicates[0]: Path=/api/product
+      routes[3]:
+        id: discovery-server-static
+        predicates[0]: Path=/eureka/**
+        uri: http://localhost:8761
+      routes[1]:
+        id: order-service
+        predicates[0]: Path=/api/order
+        uri: lb://order-service
+  application:
+    name: api-gateway
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8181/realms/spring-boot-microservices-realm
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:password@localhost:8761/eureka
